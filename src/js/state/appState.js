@@ -164,7 +164,7 @@ export function displayCuisineBtns() {
           All Cuisines
         </button>`;
 
-  state.areaList.forEach(area => {
+  state.areaList.slice(0,7).forEach(area => {
     box += `
             <button data-cuisine="${area.name}"
               class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium text-sm whitespace-nowrap hover:bg-gray-200 transition-all"
